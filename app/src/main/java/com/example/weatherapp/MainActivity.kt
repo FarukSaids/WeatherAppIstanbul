@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
 
                 val address = jsonObj.getString("name")+", "+sys.getString("country")
 
-                /* Populating extracted data into our views */
+                
                 findViewById<TextView>(R.id.address).text = address
                 findViewById<TextView>(R.id.updated_at).text =  updatedAtText
                 findViewById<TextView>(R.id.status).text = weatherDescription.capitalize()
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.pressure).text = pressure
                 findViewById<TextView>(R.id.humidity).text = humidity
 
-                /* Views populated, Hiding the loader, Showing the main design */
+                
                 findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
                 findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.VISIBLE
 
